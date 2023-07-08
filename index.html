@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="question">
+        <h2>Exercise 1: </h2>
+    <p>Write a function named destructureExample that takes in an object and an array as parameters. The function should use destructuring to extract the values 'name' and 'age' from the object and the values at index 0 and index 2 from the array. The function should then return an object with the extracted values as properties with name and age.</p>
+    </div>
+    <div class="exOne">
+        <div id="name"></div>
+        <div id="age"></div>
+        <button type="button" onclick="addImage()">Click here to see JavaScript code</button>
+        <img id="exImage" src="" alt="">        
+    </div>
+    <!-- Exercise number two -->
+    <div class="question">
+        <h2>Exercise 2: </h2>
+    <p>Write a function named sumNumbers that takes in multiple numbers as arguments using the rest operator. The function should return the sum of all the numbers.
+    </p>
+    </div>
+    <div class="exOne">
+        <div >
+            <h2>Result</h2><p id="number"></p>
+        </div>
+        
+        <button type="button" onclick="addImageTwo()">Click here to see JavaScript code</button>
+        <img id="exImagetwo" src="" alt="">        
+    </div>
+    
+     <!-- Exercise number Three -->
+     <div class="question">
+        <h2>Exercise 3: </h2>
+    <p> Write a function named createGreeting that takes in a name as a parameter and returns a greeting message using template literals. The message should be in the format: "Hello, [name]! Welcome to our website."</p>
+    </div>
+    <div class="exOne">
+        <h1>Write your name and get your message</h1>
+        <div>
+            <input type="text" id="nameInput" placeholder="Enter your name">
+            <button onclick="createGreeting()">Get Message</button>
+        </div>
+
+        <p id="greetingOutput"></p>
+        <button type="button" onclick="addImageThree()">Click here to see JavaScript code</button>
+        <img id="exImageThree" src="" alt="">   
+    </div>
+    <!-- Exercise number Four -->
+    <div class="question">
+        <h2>Exercise 4: </h2>
+    <p>Write a function named isEven that takes in a number as a parameter and returns the string "Even" if the number is even, and "Odd" if the number is odd. Use a ternary operator instead of an if/else statement.    </p>
+    </div>
+    <div class="exOne">
+        <h1>Is it Even or Odd?</h1>
+        <form onsubmit="submitForm(event)">
+            <input type="number" id="numberInput" required  placeholder="Enter your Number"/>
+            <button type="submit">Check</button>
+        </form>
+
+        <p id="testResult"></p>
+        <button type="button" onclick="addImageFour()">Click here to see JavaScript code</button>
+        <img id="exImageFour" src="" alt="">   
+    </div>
+     <!-- Exercise number Five -->
+    <div class="question">
+        <h2>Exercise 5: </h2>
+    <p>Convert the following function to an arrow function: <br><br> <span>
+        function multiply(a, b) { 
+            <br>
+          return a * b;  <br>  
+        }
+        
+        </span></p>
+    </div>
+    <div class="question">
+        <h2>Answer </h2>
+         <br><br> <span>
+        const multiply=(a, b)=> { 
+            <br>
+          return a * b;  <br>  
+        }        
+        </span>
+        <br><br> <span>
+            const multiply=(a, b)=a*b      
+            </span>
+    </div>
+    <div class="exOne">
+        <h1>Try Multiple</h1>
+        <form onsubmit="submitMultiply(event)">
+            <input type="number" id="numberOne" required  placeholder="Number"/>X
+            <input type="number" id="numberTwo" required  placeholder="Number"/>
+            <button type="submit">Check</button>
+        </form>
+
+        <p id="multipleResult"></p>
+        <button type="button" onclick="addImageFive()">Click here to see JavaScript code</button>
+        <img id="exImageFive" src="" alt="">   
+    </div>
+      <!-- Exercise number six -->
+      <div class="question">
+        <h2>Exercise 6: </h2>
+    <p>
+        Write a function named getLargestNumber that takes in two numbers as parameters. The function should return the larger number using short-circuiting and logical operators (&&, ||, ??).</p>
+    </div>
+    <div class="exOne">
+        <h1>Compare Between Two Number</h1>
+        <div>
+            <input type="number" id="largeNumOne" required  placeholder="Number"/>
+            <input type="number" id="largeNumTwo" required  placeholder="Number"/>
+            <button onclick="checkLargestNumber()" type="button">Check</button>
+        </div>
+
+        <p id="largeNumResult"></p>
+        <button type="button" onclick="addImageSix()">Click here to see JavaScript code</button>
+        <img id="exImageSix" src="" alt="">   
+    </div>
+    <!-- Exercise number Seven -->
+    <div class="question">
+        <h2>Exercise 7: </h2>
+    <p>
+        Write a function named getAddressCity that takes in an object representing a person's address. The address object has properties 'street', 'city', and 'country'. The function should return the value of the 'city' property if it exists, or the string "Unknown" if it doesn't exist, using optional chaining.</p>
+    </div>
+    <div class="exOne">
+        <h1>Please Input your Address</h1>
+        <div class="inputDiv">
+            <br>
+            <br>
+            <input placeholder="Enter your street" type="text" id="street">
+            <br>
+            <br>
+            <input placeholder="Enter your city" type="text" id="city">
+            <br>
+            <br>
+            <input placeholder="Enter your country" type="text" id="country">
+            
+            <button onclick="displayAddress()">Display City</button>
+        
+           
+        </div>
+
+        <p id="addressOutput"></p>
+        <button type="button" onclick="addImageSeven()">Click here to see JavaScript code</button>
+        <img id="exImageSeven" src="" alt="">   
+    </div>
+     <!-- Exercise number Eight -->
+     <div class="question">
+        <h2>Exercise 8: </h2>
+    <p>
+        Write a function named doubleNumbers that takes in an array of numbers and returns a new array with each number doubled using the array map method.</p>
+    </div>
+    <div class="exOne">
+        <h1>Enter numbers (comma-separated)  And click the button make it Double</h1>
+        <div class="inputDiv" >
+            <br>
+            <br>
+            <input type="text" id="numbers" placeholder="Enter numbers (comma-separated)"/>
+           
+            <button onclick="doubleArray()">Double Numbers</button>
+        </div>
+        <p id="output"></p>
+        <button type="button" onclick="addImageEight()">Click here to see JavaScript code</button>
+        <img id="exImageEight" src="" alt="">   
+    </div>
+     <!-- Exercise number Nine -->
+     <div class="question">
+        <h2>Exercise 9: </h2>
+    <p>
+        Write a function named filterEvenNumbers that takes in an array of numbers and returns a new array with only the even numbers using the array filter method.
+
+    </p>
+    </div>
+    <div class="exOne">
+        <h1>Enter numbers (comma-separated)  And click the button Filter Even Numbers</h1>
+        <div class="inputDiv" >
+            <br>
+        <input type="text" id="inputAnyNumbers" placeholder="Enter comma-separated numbers">
+
+        <button onclick="filterEvenNumbers()">Filter Even Numbers</button>
+ 
+        </div>
+        <div id="filterEvenNum"></div>
+        <button type="button" onclick="addImageNine()">Click here to see JavaScript code</button>
+        <img id="exImageNine" src="" alt="">   
+    </div>
+     <!-- Exercise number Ten -->
+     <div class="question">
+        <h2>Exercise 10: </h2>
+    <p>
+        Write a function named sumArray that takes in an array of numbers and returns the sum of all the numbers using the array reduce method.</p>
+    </div>
+    <div class="exOne">
+        <h1>Enter numbers (comma-separated)  And click the button Calulate The Array</h1>
+        <div class="inputDiv" >
+            <br>
+            <br>
+            <input type="text" id="sumArrayNumber" placeholder="Enter numbers (comma-separated)"/>
+           
+            <button onclick="calculateSum()">Calculate Sum</button>
+        </div>
+        <p id="resultSumNumber"></p>
+        <button type="button" onclick="addImageTen()">Click here to see JavaScript code</button>
+        <img id="exImageTen" src="" alt="">   
+    </div>
+    <!-- Exercise number Eleven -->
+    <div class="question">
+        <h2>Exercise 11: </h2>
+    <p>
+        Write a function named sortNumbers that takes in an array of numbers and returns a new array with the numbers sorted in ascending order using the array sort method.</p>
+    </div>
+    <div class="exOne">
+        <h1>Enter numbers (comma-separated)  And click the button Sort the Array</h1>
+        <div class="inputDiv" >
+            <br>
+            <br>
+            <input type="text" id="sortArrayNumber" placeholder="Enter numbers (comma-separated)"/>
+           
+            <button onclick="sortAndDisplay()">Sort Numbers</button>
+        </div>
+        <p id="sortNumResult"></p>
+        <button type="button" onclick="addImageEleven()">Click here to see JavaScript code</button>
+        <img id="exImageEleven" src="" alt="">   
+    </div>
+    <script src="./exerciseOne.js"></script>
+    <script src="./exerciseTwo.js"></script>
+    <script src="./exerciseThree.js"></script>
+    <script src="./exerciseFour.js"></script>
+    <script src="./exerciseFive.js"></script>
+    <script src="./exerciseSix.js"></script>
+    <script src="./exerciseSeven.js"></script>
+    <script src="./exerciseEight.js"></script>
+    <script src="./exerciseNine.js"></script>
+    <script src="./exerciseTen.js"></script>
+    <script src="./exerciseEleven.js"></script>
+</body>
+</html>

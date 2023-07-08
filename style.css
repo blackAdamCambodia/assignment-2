@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.exOne {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#name,
+#age {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 25px ;
+    background-color: yellow;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+
+
+}
+button {
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px, rgba(0, 0, 0, .14) 0 6px 10px 0, rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform,opacity;
+    z-index: 0;
+    margin: 30px 0;
+}
+.question {
+    width: 800px;
+    background-color: #cccccc86;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px, rgba(0, 0, 0, .14) 0 6px 10px 0, rgba(0, 0, 0, .12) 0 1px 18px 0;
+    margin: 20px auto;
+    padding: 20px;
+}
+#number {
+    width: 50px;
+    height: 50px;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px, rgba(0, 0, 0, .14) 0 6px 10px 0, rgba(0, 0, 0, .12) 0 1px 18px 0;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 16px;
+    line-height: 20px;
+
+}
+
+#numberInput,
+#numberOne,
+#numberTwo,
+#largeNumOne,
+#largeNumTwo,
+#nameInput,
+#street,
+#city,
+#country,
+#numbers,
+#inputAnyNumbers,
+#sumArrayNumber,
+#sortArrayNumber {
+    width: 300px;
+    padding: 13px 20px;
+    background-color: bisque;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    margin-right: 20px;
+
+}
+#testResult,
+#multipleResult,
+#largeNumResult,
+#resultSumNumber,
+#sortNumResult,
+#filterEvenNum,
+#output,
+ #addressOutput{
+    font-size: 20px;
+    border: 1px solid #62eb96;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 10px 20px;
+    background: chocolate;
+    font-weight: 800;
+}
+#numberOne,
+#numberTwo,
+#largeNumOne,
+#largeNumTwo {
+    width: 120px;
+    margin: 10px;
+    
+}
+.inputDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#greetingOutput {
+    padding: 20px;
+    font-size: 17px;
+    background: linear-gradient(135deg, orange 40%, cyan);
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
